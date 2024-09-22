@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Wisata Jepang"
+        android:textStyle="bold"
+        android:textSize="20sp"
+         />
+
+    <!-- Gambar destinasi -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Lokasi destinasi -->
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokasi: Tokyo, Jepang"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewDestinationDateDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal: 20 September 2024"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Deskripsi detail -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="20dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="Jakarta - Bagi kamu yang memiliki rencana liburan ke luar negeri, Jepang bisa masuk list pertama sebagai negara di Asia yang wajib dikunjungi. Pasalnya negara dengan julukan Negeri Sakura ini menghadirkan beragam objek pariwisata dan budaya yang mampu membuat para wisatawan kagum. Jepang turut masuk sebagai negara yang dirindukan oleh para wisatawan luar negeri. Berdasarkan survei Japan Natioea Selatan, Taiwan, Hong Kong, Kanada, Australia dan Rusia akan mengunjungi Jepang setelah pandemi berakhir.    Baca artikel detikTravel, "
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewDestinationDateDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
